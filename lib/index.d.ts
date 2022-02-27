@@ -17,8 +17,8 @@ interface IStrategyOptions {
 }
 
 interface IStrategyOptionsWithRequest {
-    usernameField?: string | undefined;
-    passwordField?: string | undefined;
+    addressField?: string | undefined;
+    messageField?: string | undefined;
     signedField?: string | undefined;
     passReqToCallback: true;
 }
@@ -30,16 +30,18 @@ interface IVerifyOptions {
 interface VerifyFunctionWithRequest {
     (
         req: express.Request,
-        username: string,
-        password: string,
+        addressField: string | undefined,
+        messageField: string | undefined,
+        signedField: string | undefined,
         done: (error: any, user?: any, options?: IVerifyOptions) => void
     ): void;
 }
 
 interface VerifyFunction {
     (
-        username: string,
-        password: string,
+        addressField: string | undefined,
+        messageField: string | undefined,
+        signedField: string | undefined,
         done: (error: any, user?: any, options?: IVerifyOptions) => void
     ): void;
 }
