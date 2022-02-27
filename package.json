@@ -1,7 +1,7 @@
 {
   "name": "passport-metamask-statergy",
   "version": "1.0.5",
-  "description": "Web3 authentication strategy for your dapp :tm: using Passport.",
+  "description": "Web3 authentication strategy using Passport.",
   "keywords": [
     "passport",
     "web3",
@@ -14,46 +14,18 @@
     "sso"
   ],
   "author": {
-    "name": "psychobunny",
-    "email": "andrew@nodebb.org",
-    "url": "https://github.com/psychobunny"
+    "name": "arun",
+    "email": "arun@thworks.org"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/psychobunny/passport-dapp-web3.git"
-  },
-  "bugs": {
-    "url": "http://github.com/psychobunny/passport-dapp-web3/issues"
-  },
-  "license": "MIT",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ],
   "main": "./lib",
   "dependencies": {
-    "before": "0.0.1",
-    "describe": "^1.2.0",
-    "expect": "^26.6.2",
-    "istanbul": "^0.4.5",
-    "it": "^1.1.1",
-    "jsdoc": "^3.6.6",
-    "jshint": "^2.12.0",
     "passport-strategy": "1.x.x",
     "web3-eth-accounts": "^1.3.4"
   },
   "devDependencies": {
-    "make-node": "0.4.6",
-    "mocha": "2.x.x",
-    "chai": "2.x.x",
-    "chai-passport-strategy": "0.1.x"
+
   },
   "engines": {
-    "node": ">= 0.4.0"
-  },
-  "scripts": {
-    "test": "make test"
+    "node": ">= 12.4.0"
   }
 }
