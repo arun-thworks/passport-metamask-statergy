@@ -1,6 +1,6 @@
 {
   "name": "passport-metamask-statergy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Web3 authentication strategy using Passport.",
   "keywords": [
     "passport",
